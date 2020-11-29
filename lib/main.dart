@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:todoapps/screen/navbar.dart';
 import 'reusable/constant.dart';
+
 
 void main() {
   runApp(MyApp());
@@ -29,6 +31,15 @@ class MyApp extends StatelessWidget {
         // closer together (more dense) than on mobile platforms.
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
+      localizationsDelegates: [
+          GlobalMaterialLocalizations.delegate,
+          GlobalWidgetsLocalizations.delegate,
+    ],
+    
+      supportedLocales: [
+        const Locale('en'),
+        const Locale('id'),
+      ],
       home: Navbar(),
     );
   }

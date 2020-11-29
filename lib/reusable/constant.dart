@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 class ColorPalette {
   
   static var kPrimaryColor = MaterialColor(0xFF3FC785, color);
+  static var kWhiteColor = MaterialColor(0xFFFFFFF, color);
   static var backgroundColor = Color(0xffF1F7F8);
   static var primaryColor = Color(0xff3FC785);
   static var descriptionColor = Color(0xffBFBFBF);
